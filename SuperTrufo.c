@@ -112,4 +112,6 @@ int main(){
     printf("PIB: %.2f Bilhões de reais\n", PIB1);
     printf("Pontos Turisticos: %d\n", pontosturisticos1);
   return 0;
+
+  //que trabalheira para conectar o github no vscode
 }
