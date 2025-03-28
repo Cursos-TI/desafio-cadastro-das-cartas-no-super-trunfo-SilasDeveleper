@@ -111,6 +111,5 @@ int main(){
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f Bilhões de reais\n", PIB1);
     printf("Pontos Turisticos: %d\n", pontosturisticos1);
-
   return 0;
 }
