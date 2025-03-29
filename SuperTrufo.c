@@ -5,7 +5,7 @@
 
 int main(){
 
-    setlocale(LC_ALL, "Portuguese_Brazil");
+    setlocale(LC_ALL,"Portuguese_Brazil");
 
     char estado[3], estado1[3];
     char codigo[4], codigo1[4];// Array de caracteres para armazenar o código (ex: "A01" + '\0')
