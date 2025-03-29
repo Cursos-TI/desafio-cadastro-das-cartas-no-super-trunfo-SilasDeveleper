@@ -66,7 +66,7 @@ int main(){
     printf("PIB: %.2f Bilhões de reais\n", PIB);
     printf("Número de Pontos Turísticos: %d\n", pontosturisticos);
     printf("Densidade Populacional: %.2f Hab/Km²\n", densidade);
-    printf("PIB per Capita: %.2f reias\n", pibpercapita);
+    printf("PIB per Capita: %.2f reais\n", pibpercapita);
 
     //Inserir a segunda carta
     printf("===================================\n");
