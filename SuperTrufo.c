@@ -136,12 +136,12 @@ int main(){
 
     //fazendo a comparação tive que usar strncpy para transforma o resultado em string
     char resultadoPopulacao[40], resultadoArea[40], resultadoPIB[40], resultadoTurismo[40], resultadoDensidade[40], resultadoPIBPERCAPITA[40], resultadoSuperPoder[40];
-    
+
     strcpy(resultadoPopulacao, (populacao > populacao1) ? "Carta 1 ganhou" : (populacao < populacao1) ? "carta 2 ganhou" : "Empate");
     strcpy(resultadoArea, (area > area1) ? "Carta 1 ganhou" : (area < area1) ? "carta 2 ganhou" : "Empate");
     strcpy(resultadoPIB, (PIB > PIB1) ? "Carta 1 ganhou" : (PIB < PIB1) ? "carta 2 ganhou" : "Empate");
     strcpy(resultadoTurismo, (pontosturisticos > pontosturisticos1) ? "Carta 1 ganhou" : (pontosturisticos < pontosturisticos1) ? "carta 2 ganhou" : "Empate");
-    strcpy(resultadoDensidade, (densidade > densidade1) ? "Carta 1 ganhou" : (densidade < densidade1) ? "carta 2 ganhou" : "Empate");
+    strcpy(resultadoDensidade, (densidade < densidade1) ? "Carta 1 ganhou" : (densidade > densidade1) ? "carta 2 ganhou" : "Empate");
     strcpy(resultadoPIBPERCAPITA, (pibpercapita > pibpercapita1) ? "Carta 1 ganhou" : (pibpercapita < pibpercapita1) ? "carta 2 ganhou" : "Empate");
     strcpy(resultadoSuperPoder, (SuperPoder > SuperPoder1) ? "Carta 1 ganhou" : (SuperPoder < SuperPoder1) ? "carta 2 ganhou" : "Empate");
 
