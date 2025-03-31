@@ -4,7 +4,6 @@
 #include <locale.h>
 
 int main(){
-
     setlocale(LC_ALL,"Portuguese_Brazil");
 
     char estado[3], estado1[3];
@@ -113,13 +112,14 @@ int main(){
     printf("Digite o número de pontos turisticos: ");
     scanf("%d", &pontosturisticos1);
     
-    // definindo a variaveis usado < ou > 
+    // definindo as variaveis usado < ou > 
     float densidade1 = (area1 > 0) ? (float)populacao1 / area1 : 0;
     float inversodensidade1 = (densidade1 > 0) ? 1 / densidade1 : 0;
     float pibpercapita1 = (populacao1 > 0) ? PIB1 /(float)populacao1 : 0;
 
     //definindo o Super Poder das cartas fazendo a soma das variaveis numericas
     float SuperPoder1 = (float)populacao1 + area1 + PIB1 + (float)pontosturisticos1 + pibpercapita1 + inversodensidade1;
+
 
     //Exibir dados:
     printf("\n=== Carta 2 ===\n");
@@ -133,6 +133,7 @@ int main(){
     printf("Densidade Populacional: %.2f Hab/Km²\n", densidade1);
     printf("PIB per Capita: %.2f reais\n", pibpercapita1);
     printf("O super poder é: %.2f\n", SuperPoder1);
+
 
     //fazendo a comparação tive que usar strncpy para transforma o resultado em string
     char resultadoPopulacao[40], resultadoArea[40], resultadoPIB[40], resultadoTurismo[40], resultadoDensidade[40], resultadoPIBPERCAPITA[40], resultadoSuperPoder[40];
@@ -157,9 +158,11 @@ int main(){
 
 
     printf("\n===Comparação de um atributo===\n");
-
+    
     printf("Carta 1 - %s (%s): %.2f\n", nomecidade, estado, SuperPoder);
+
     printf("Carta 2 - %s (%s): %.2f\n", nomecidade1, estado1, SuperPoder1);
+
     if(SuperPoder > SuperPoder1){
       printf("Carta 1 (%s) venceu!", nomecidade);
     }if(SuperPoder < SuperPoder1){
