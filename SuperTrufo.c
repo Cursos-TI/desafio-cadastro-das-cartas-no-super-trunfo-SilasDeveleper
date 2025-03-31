@@ -70,7 +70,7 @@ int main(){
     printf("Número de Pontos Turísticos: %d\n", pontosturisticos);
     printf("Densidade Populacional: %.2f Hab/Km²\n", densidade);
     printf("PIB per Capita: %.2f reais\n", pibpercapita);
-    printf("O super poder é: %f\n", SuperPoder);
+    printf("O super poder é: %.2f\n", SuperPoder);
 
 
 
@@ -132,7 +132,7 @@ int main(){
     printf("Número de Pontos Turísticos: %d\n", pontosturisticos1);
     printf("Densidade Populacional: %.2f Hab/Km²\n", densidade1);
     printf("PIB per Capita: %.2f reais\n", pibpercapita1);
-    printf("O super poder é: %f\n", SuperPoder1);
+    printf("O super poder é: %.2f\n", SuperPoder1);
 
     //fazendo a comparação tive que usar strncpy para transforma o resultado em string
     char resultadoPopulacao[40], resultadoArea[40], resultadoPIB[40], resultadoTurismo[40], resultadoDensidade[40], resultadoPIBPERCAPITA[40], resultadoSuperPoder[40];
@@ -154,6 +154,19 @@ int main(){
     printf("Densidade: %s\n",resultadoDensidade);
     printf("PIB per capita: %s\n",resultadoPIBPERCAPITA);
     printf("Super Poder: %s\n",resultadoSuperPoder);
+
+
+    printf("\n===Comparação de um atributo===\n");
+
+    printf("Carta 1 - %s (%s): %.2f\n", nomecidade, estado, SuperPoder);
+    printf("Carta 2 - %s (%s): %.2f\n", nomecidade1, estado1, SuperPoder1);
+    if(SuperPoder > SuperPoder1){
+      printf("Carta 1 (%s) venceu!", nomecidade);
+    }if(SuperPoder < SuperPoder1){
+        printf("Carta 2 (%s) venceu!", nomecidade1);
+    }else{
+        printf("Empate!");
+    }
 
 
  return 0;
